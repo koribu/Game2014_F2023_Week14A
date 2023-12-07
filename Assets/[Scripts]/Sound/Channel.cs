@@ -7,5 +7,6 @@ public enum Channel
    PLAYER_SFX,
    PLAYER_HURT_SFX,
    PLAYER_DEATH_SFX,
+   ENEMY_SFX,
    MUSIC
 }

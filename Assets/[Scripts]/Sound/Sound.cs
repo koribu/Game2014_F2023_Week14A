@@ -7,6 +7,7 @@ public enum Sound
     HURT,
     DEATH,
     JUMP,
+    ENEMY_SHOOT,
     MAIN_MUSIC,
     END_MUSIC
 

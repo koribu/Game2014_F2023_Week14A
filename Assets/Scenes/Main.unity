@@ -15282,10 +15282,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CherryBomb
       objectReference: {fileID: 0}
-    - target: {fileID: 7263229222249394104, guid: 3806b3b0f9a8cde4ab2f7c4f6f02bb97, type: 3}
-      propertyPath: _throwPower
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 7687027610120243730, guid: 3806b3b0f9a8cde4ab2f7c4f6f02bb97, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

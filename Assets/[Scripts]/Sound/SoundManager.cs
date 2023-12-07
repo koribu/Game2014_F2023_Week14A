@@ -26,6 +26,7 @@ public class SoundManager : MonoBehaviour
         _audioClips.Add(Resources.Load<AudioClip>("Sounds/Player_Hurt_SFX"));
         _audioClips.Add(Resources.Load<AudioClip>("Sounds/Player_Lose_SFX"));
         _audioClips.Add(Resources.Load<AudioClip>("Sounds/Player_Jump_SFX"));
+        _audioClips.Add(Resources.Load<AudioClip>("Sounds/Enemy_Shooting_SFX"));
 
 
         //Musixs
