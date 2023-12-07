@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour
 
         _soundManager = FindObjectOfType<SoundManager>();
 
+        BulletManager.Instance().BuildPool();
+
 
     }
 

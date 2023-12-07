@@ -85,6 +85,37 @@ CircleCollider2D:
   m_Offset: {x: -0.14217567, y: -0.13748026}
   serializedVersion: 2
   m_Radius: 6.911028
+--- !u!1 &3707759067610378992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836631406465601951}
+  m_Layer: 12
+  m_Name: BulletSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836631406465601951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707759067610378992}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.634, y: 0.158, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8775519407361910931}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4965883670998753735
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +276,7 @@ GameObject:
   - component: {fileID: 1622865743982573297}
   - component: {fileID: 126136528457326020}
   - component: {fileID: 2398042250822985951}
+  - component: {fileID: 8870158474179379007}
   m_Layer: 12
   m_Name: Piggy
   m_TagString: Enemy
@@ -270,6 +302,7 @@ Transform:
   - {fileID: 4084479367261225855}
   - {fileID: 2898922146234511068}
   - {fileID: 1087643853329411642}
+  - {fileID: 836631406465601951}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5519642467622349769
@@ -427,6 +460,19 @@ MonoBehaviour:
   _collidingLayers:
     serializedVersion: 2
     m_Bits: 448
+--- !u!114 &8870158474179379007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081269662350920063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 067179f373ca93d4690380771ce6d762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletSpawnPoint: {fileID: 836631406465601951}
 --- !u!1 &9024895167017837225
 GameObject:
   m_ObjectHideFlags: 0

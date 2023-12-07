@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UIElements;
@@ -40,7 +41,7 @@ public class BulletManager : MonoBehaviour
         _bulletPrefab = Resources.Load<GameObject>("Prefabs/CherryBomb");
     }
 
-    void BuildPool()
+    public void BuildPool()
     {
         _bulletParent = GameObject.Find("[BULLETS]").transform;
 
@@ -54,7 +55,7 @@ public class BulletManager : MonoBehaviour
     GameObject CreateBullet()
     {
         GameObject temp = GameObject.Instantiate(_bulletPrefab, _bulletParent);
-        temp.active = false;
+        temp.SetActive(false);
         return temp;
     }
 
@@ -70,6 +71,8 @@ public class BulletManager : MonoBehaviour
         bullet.SetActive(true);
         bullet.transform.position = spawnPoint;
 
+        // StartCoroutine(bullet.GetComponent<BulletBehavior>().ThrowBulletRoutine());
+        bullet.GetComponent<BulletBehavior>().Activate();
         return bullet;
 
     }
